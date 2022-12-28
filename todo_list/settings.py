@@ -28,7 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
-    'web-production-a9c8.up.railway.app',
+    'https://web-production-a9c8.up.railway.app',
+    'localhost', 
+    '127.0.0.1',
     ]
 
 
@@ -134,3 +136,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-a9c8.up.railway.app']
